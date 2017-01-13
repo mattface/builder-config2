@@ -1,0 +1,29 @@
+- name: Deploy distcc configuration
+  copy:
+    src: "etc/default/distcc"
+    dest: "/etc/default/distcc"
+    owner: root
+    group: root
+    mode: 644
+  tags:
+    - distcc
+
+- name: Deplay distcc hosts
+  copy:
+    src: "etc/distcc/hosts"
+    dest: "/etc/distcc/hosts"
+    owner: root
+    group: root
+    mode: 644
+  tags:
+    - distcc
+
+- service:
+    name: distcc
+    state: restarted
+  tags:
+    - distcc
+    
+
+  
+  

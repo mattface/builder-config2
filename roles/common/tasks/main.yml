@@ -3,3 +3,4 @@
 - include: compilers.yml
 - include: users.yml
 - include: mirrors.yml
+- include: distcc.yml

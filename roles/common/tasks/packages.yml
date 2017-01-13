@@ -33,6 +33,7 @@
     - python-keyring
     - python-pip
     - python-requests
+    - unattended-upgrades
     - unzip
     - zlib1g:i386
   tags:

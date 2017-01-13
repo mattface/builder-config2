@@ -12,6 +12,7 @@
     state: latest
     update_cache: yes
   with_items:
+    - ansible
     - bc
     - build-essential
     - ccache
@@ -30,6 +31,7 @@
     - msmtp
     - python
     - python-keyring
+    - python-pip
     - python-requests
     - unzip
     - zlib1g:i386
